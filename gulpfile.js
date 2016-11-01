@@ -75,7 +75,6 @@ gulp.task('minify-images', function () {
     return gulp.src('./_images/*')
         .pipe(imagemin({
             progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()]
         }))
         .pipe(gulp.dest('./img/'));
