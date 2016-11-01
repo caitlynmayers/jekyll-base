@@ -1,11 +1,9 @@
-// Bourbon
-@import "bourbon/bourbon";
-
-// Default Modules
+// Third-party Modules
 @import "modules/reset";
-@import "modules/syntax";
+@import "bourbon/bourbon";
 
 // Custom Modules
 @import "modules/mixins";
 @import "modules/color";
 @import "modules/type";
+@import "modules/base";
