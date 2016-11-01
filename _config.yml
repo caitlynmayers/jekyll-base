@@ -1,4 +1,4 @@
 name: Jekyll Base
 markdown: kramdown
-highlighter: pygments # or rouge or null
+highlighter: pygments
 exclude: ["node_modules", "gulpfile.js", "package.json"]

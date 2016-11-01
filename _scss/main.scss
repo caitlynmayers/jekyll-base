@@ -1,6 +1,11 @@
-@import "reset";
-@import "syntax";
+// Bourbon
+@import "bourbon/bourbon";
 
-body {
-    background: white;
-}
+// Default Modules
+@import "modules/reset";
+@import "modules/syntax";
+
+// Custom Modules
+@import "modules/mixins";
+@import "modules/color";
+@import "modules/type";
