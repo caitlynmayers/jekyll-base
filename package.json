@@ -1,12 +1,12 @@
 {
-  "name": "browser-sync-jekyll",
-  "version": "0.0.0",
-  "description": "A starter project including full setup for Jekyll, GulpJS, SASS & BrowserSync",
+  "name": "jekyll-base",
+  "version": "0.1.0",
+  "description": "A starter project including full setup for Jekyll, GulpJS, SASS, BrowserSync, ImageMin",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Shane Osbourne",
+  "author": "Caitlyn Mayers, Shane Osbourne",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^1.3.7",
@@ -17,20 +17,20 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.1.0",
     "imagemin-pngquant": "^5.0.0",
-    "svgo": "^0.7.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync.git"
+    "url": "https://github.com/caitlynmayers/jekyll-base.git"
   },
   "keywords": [
     "jekyll",
     "gulp",
     "sass",
+    "imagemin",
     "browsersync"
   ],
   "bugs": {
-    "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync/issues"
+    "url": "https://github.com/caitlynmayers/jekyll-base/issues"
   },
-  "homepage": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync"
+  "homepage": "https://github.com/caitlynmayers/jekyll-base"
 }
