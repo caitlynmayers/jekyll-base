@@ -1,21 +1,23 @@
-jekyll-gulp-sass-browser-sync
-=============================
+Jekyll Base
+===========
 
-A starter project including full setup for Jekyll, GulpJS, SASS, AutoPrefixer &amp; BrowserSync
-
-Here's a 1.5min [screencast](http://quick.as/pvrslgx) showing what you get.
-
-And here's a GIF showing the CSS injecting.
-
-![GIF](http://f.cl.ly/items/373y2E0e0i2p0E2O131g/test-gif.gif)
+A starter project with a full setup for Jekyll with GulpJS, SASS, Image Minification, AutoPrefixer &amp; BrowserSync. This repo is based on [this starter project by Shaky Shane](https://github.com/shakyShane/jekyll-gulp-sass-browser-sync).
 
 ## System Preparation
 
-To use this starter project, you'll need the following things installed on your machine.
+Before using this starter project, you'll need to have the following things installed on your machine.
 
 1. [Jekyll](http://jekyllrb.com/) - `$ gem install jekyll`
-2. [NodeJS](http://nodejs.org) - use the installer.
+2. [NodeJS](http://nodejs.org) - I recommend using [Homebrew](http://brew.sh/) to install this.
 3. [GulpJS](https://github.com/gulpjs/gulp) - `$ npm install -g gulp` (mac users may need sudo)
+
+### Dependencies
+1. Gulp
+2. BrowserSync
+3. Gulp Sass
+4. Gulp Autoprefixer 
+5. [Gulp Imagemin](https://www.npmjs.com/package/imagemin-pngquant) - `$ npm install --save-dev gulp-imagemin`
+6. [Imagemin PNGQuant](https://www.npmjs.com/package/gulp-imagemin) - ``$ npm install --save-dev imagemin-pngquant `
 
 ## Local Installation
 
@@ -35,18 +37,3 @@ $ gulp
 **jekyll**
 
 As this is just a Jekyll project, you can use any of the commands listed in their [docs](http://jekyllrb.com/docs/usage/)
-
-## Deploy with Gulp
-
-You can easily deploy your site build to a gh-pages branch. First, follow the instructions at [gulp-gh-pages](https://github.com/rowoot/gulp-gh-pages) to get your branch prepared for the deployment and to install the module. Then, in `gulpfile.js` you'll want to include something like the code below. `gulp.src()` needs to be the path to your final site folder, which by default will be `_site`. If you change the `destination` in your `_config.yml` file, be sure to reflect that in your gulpfile.
-
-
-
-```javascript
-var deploy = require("gulp-gh-pages");
-
-gulp.task("deploy", ["jekyll-build"], function () {
-    return gulp.src("./_site/**/*")
-        .pipe(deploy());
-});
-```

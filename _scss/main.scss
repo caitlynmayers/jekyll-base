@@ -1,6 +1,9 @@
-@import "reset";
-@import "syntax";
+// Third-party Modules
+@import "modules/reset";
+@import "bourbon/bourbon";
 
-body {
-    background: white;
-}
+// Custom Modules
+@import "modules/mixins";
+@import "modules/color";
+@import "modules/type";
+@import "modules/base";
